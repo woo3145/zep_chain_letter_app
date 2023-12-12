@@ -3,6 +3,7 @@
     "strict": true,
     "noEmit": true,
     "isolatedModules": true,
-    "types": ["zep-script"]
+    "types": ["zep-script"],
+    "moduleResolution": "Node"
   }
 }
