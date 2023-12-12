@@ -12,92 +12,33 @@
       referrerpolicy="no-referrer"
     />
     <style>
-      * {
-        padding: 0;
-        margin: 0;
-        box-sizing: border-box;
-      }
-
-      ::-webkit-scrollbar {
-        display: none;
-      }
-
-      body {
-        -ms-overflow-style: none;
-      }
-
-      .container {
-        height: 100vh;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      }
-
-      .content {
-        display: flex;
-        min-height: 200px;
-        justify-content: center;
-        align-items: center;
-        background-color: white;
-        margin-top: 10px;
-        margin-bottom: 10px;
-        border-radius: 7px;
-      }
-
-      hr {
-        border-width: 0.5px;
-      }
-
-      i {
-        cursor: pointer;
-      }
-
-      .box {
-        padding: 10px;
-        display: flex;
-        flex-direction: column;
-        width: 300px;
-        height: 300px;
-        border-radius: 7px;
-        border-color: while;
-        background-color: white;
-        border-width: 2px;
-        box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.3);
-      }
-
-      .cover {
+      .bottle {
         width: 48px;
         height: 48px;
         object-fit: contain;
-      }
-
-      .header {
-        display: flex;
-        justify-content: space-between;
       }
 
       .footer {
         justify-self: flex-end;
         align-self: center;
       }
-
-      img {
-        width: 20%;
-      }
     </style>
     <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
   </head>
 
-  <body>
-    <div class="container">
-      <div class="box">
-        <div class="header">
+  <body class="p-0 m-0 box-border">
+    <div class="flex items-center justify-center h-screen">
+      <div
+        class="p-2.5 w-[300px] h-[300px] shadow-md border-white bg-white rounded-md"
+      >
+        <div class="flex items-center justify-between">
           <div class="logo">🐳 행운의 편지</div>
           <div class="button_close">
             <i onclick="closeWidget()" class="fa-solid fa-xmark"></i>
           </div>
         </div>
-        <hr />
+        <hr class="borde-[0.5px]" />
         <div id="content" class="content"></div>
         <div class="footer">
           <span id="text">보내기</span>
@@ -124,7 +65,7 @@
           }
           let content_image = document.createElement('img');
           content_image.setAttribute('src', BOTTLE);
-          content_image.setAttribute('class', 'cover');
+          content_image.setAttribute('class', 'bottle');
           content.append(content_image);
         }
         if (text) {
