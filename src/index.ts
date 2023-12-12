@@ -1,6 +1,4 @@
-/**
- * Copyright (c) 2023 ZEP Co., LTD
- */
+import { add } from './utils/add';
 
 import { ScriptPlayer } from 'zep-script';
 
