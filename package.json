@@ -13,8 +13,12 @@
     "@babel/core": "^7.23.6",
     "@babel/preset-typescript": "^7.23.3",
     "@types/node": "^18.19.3",
+    "@types/ws": "^8.5.10",
     "eslint": "^8.55.0",
     "typescript": "^5.3.3",
     "zep-script": "1.0.0-alpha.11"
+  },
+  "dependencies": {
+    "ws": "^8.15.1"
   }
 }
